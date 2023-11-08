@@ -1,11 +1,19 @@
+'use client';
+
 import './navbar.scss';
 import  listData  from '../../elemnts/Data';
-import { Fragment } from 'react';
+import { Fragment, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 
-export default function Navbar(){
+
+function Navbar(){
+
+     const handleData = () => {
+          alert('Hello');
+     }
+
      return (
         <header className="header-list">
           <nav className="nav-list">
@@ -17,8 +25,15 @@ export default function Navbar(){
                          </Fragment>
                     ))}
                </ul>
-               <button className="btn" name="button" type="button">Sign up</button>
+               <button
+               className="btn" 
+               name="button" 
+               type="button"
+               onClick={handleData} 
+               >Sign up</button>
           </nav>
         </header>
      )
 }
+
+export default Navbar;
