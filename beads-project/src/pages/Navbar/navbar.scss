@@ -12,16 +12,25 @@
        .ul-list{
           display: flex;
           flex-direction: row;
-          margin-left: 60%;
+          margin-left: 45%;
 
           .list{
                margin: 30px 30px;
           }
+
+          .list-item{
+            font-weight: bold;
+          }
+
+          .list-item:hover{
+            font-weight: bold;
+            color: rgb(196, 218, 0);
+          }
        }
 
        .btn{
-          margin: 15px 20px;
-          background-color: rgb(229, 255, 0);
+          margin: 20px 20px;
+          background-color: rgb(196, 218, 0);
           height: 5vh;
           width: 8vw;
           text-align: center;
