@@ -6,12 +6,10 @@ import { Fragment, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-
-
 function Navbar(){
 
      const handleData = () => {
-          alert('Hello');
+          // alert('Hello');
      }
 
      return (
