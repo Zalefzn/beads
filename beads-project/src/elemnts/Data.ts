@@ -4,12 +4,12 @@ const listData = [
 
           id: 1,
           name: "Home",
-          url : ""
+          url : "#hero"
      },
      {
           id: 2,
           name: "About",
-          url : ""
+          url : "#about"
      },
      {
           id: 3,

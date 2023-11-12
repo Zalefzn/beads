@@ -1,19 +1,85 @@
 .about{
      
      .section-about{
-          margin: 12% 10%;
+          margin: 30% 10%;
 
           .section-img{
-               margin-top: 10%;
+               margin-top: 12%;
                position: static;
 
                .img-about{
-                    margin-top: 20vh;
+                    margin-top: 30vh;
                     height:  80vh;
                     width: auto;
-                    // animation-name: animation1;
-                    // animation-duration: 7s;
+                    animation-name: animation1;
+                    animation-duration: 13s;
+               }
+          }
+
+          .content-about{
+               height: 50vh;
+               width: 40vw;
+               background-color: rgb(255, 255, 255);
+               position: static;
+               margin: -65vh 45vw;
+
+               .h3-about{
+                    font-size: 30px;
+                    font-weight: 400;
+                    color: gray;
+                    animation-name: animation1;
+                    animation-duration: 9s;
+               }
+
+               .h1-about{
+                    font-size: 60px;
+                    font-weight: bold;
+                    animation-name: animation1;
+                    animation-duration: 10s;
+               }
+
+               .p-about{
+                    font-size: 30px;
+                    font-weight: 400;
+                    color: grey;
+                    animation-name: animation1;
+                    animation-duration: 11s;
+               }
+
+               .about-btn{
+                    margin-top: 20px;
+
+                    .about-submit{
+                         text-align: center;
+                         height: 5vh;
+                         width: 10vw;
+                         background-color: rgb(196, 218, 0);
+                         box-shadow: rgba(80, 80, 80, 0.04) 0 0 1px 0, rgba(155, 155, 155, 0.1) 0 3px 4px 0;
+                         color: white;
+                         font-size: 20px;
+                         font-weight: 600;
+                         border-radius: 50px;
+                         animation-name: animation1;
+                         animation-duration: 12s;
+                    }
                }
           }
      }
+
+
+
+     @keyframes animation1 {
+          0% {
+              
+              margin-left: 10%;
+              opacity: 0;
+          }
+
+          70% {
+               margin-left: 0%;
+               opacity: 10;
+          }
+     }
+
 }
+

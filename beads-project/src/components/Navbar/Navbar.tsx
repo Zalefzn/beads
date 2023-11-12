@@ -5,6 +5,7 @@ import  listData  from '../../elemnts/Data';
 import { Fragment, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Style from './../../styles/page.module.css';
 
 function Navbar(){
 
@@ -19,7 +20,7 @@ function Navbar(){
                <ul className="ul-list">
                     {listData.map((list) => (
                          <Fragment key={list.id}>
-                              <li className="list list-item">{list.name}</li>
+                              <li className="list list-item"><Link href={list.url} scroll={true}>{list.name}</Link></li>
                          </Fragment>
                     ))}
                </ul>
