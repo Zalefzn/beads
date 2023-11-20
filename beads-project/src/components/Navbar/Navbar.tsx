@@ -5,7 +5,6 @@ import  listData  from '../../elemnts/Data';
 import { Fragment, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Style from './../../styles/page.module.css';
 
 function Navbar(){
 
