@@ -8,7 +8,7 @@ const Products = () => {
           <main className="main-product">
                <section className="cards">
                     <div className="card-one">
-
+                         
                     </div>
                     <div className="card-two">
                          
