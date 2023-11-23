@@ -2,6 +2,24 @@
     height: 70vh;
     width: 100%;
     background-color: rgb(255, 255, 255);
+
+    .content-product{
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 10vh;
+        animation-name: animation;
+        animation-duration: 14s;
+
+        .header-products{
+            color: grey;
+            font-size: 30px;
+        }
+
+        .desc-products{
+            color: black;
+            font-weight: bold;
+        }
+    }
     
     .cards{
       display: flex;
@@ -16,26 +34,54 @@
           width: 20vw;
           background-color: rgb(255, 255, 255);
           box-shadow: 10px 10px 5px rgb(221, 221, 221);
-      }
+          margin-bottom: 10vh;
+          animation-name: animation-card ;
+          animation-duration: 15s;
 
-      .card-two{
-          position: static;
-          border-radius: 20px;
-          height: 60vh;
-          width: 20vw;
-          background-color: rgb(255, 255, 255);
-          box-shadow: 10px 10px 5px rgb(221, 221, 221);
+          .desc-card{
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 14px;
+            
+          }
 
-      }
+          .img-products{
+            object-fit: cover;
+            position: static;
+          }
 
-      .card-three{
-          position: static;
-          border-radius: 20px;
-          height: 60vh;
-          width: 20vw;
-          background-color: rgb(255, 255, 255);
-          box-shadow: 10px 10px 5px rgb(221, 221, 221);
+          .btn-product{
+            margin: 8vh 11vw;
+            text-align: center;
+            height: 4vh;
+            width: 8vw;
+            background-color: rgb(196, 218, 0);
+            box-shadow: rgba(80, 80, 80, 0.04) 0 0 1px 0, rgba(155, 155, 155, 0.1) 0 3px 4px 0;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 50px;
+          }
+      }   
+    }
 
-      }
+    @keyframes animation {
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 10;
+        }
+    }
+
+    @keyframes animation-card {
+        0%{
+            margin-top: 0px;
+            opacity: 0;
+        }
+        50%{
+            margin-top: 20px;
+            opacity: 10;
+        }
     }
 }

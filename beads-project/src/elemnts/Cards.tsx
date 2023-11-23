@@ -1,5 +1,9 @@
 const Cards = () => {
-
+     return(
+          <div className="main-cards">
+               
+          </div>
+     );
 
 }
 

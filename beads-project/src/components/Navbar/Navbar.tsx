@@ -5,11 +5,15 @@ import  listData  from '../../elemnts/Data';
 import { Fragment, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import swal from 'sweetalert';
 
 function Navbar(){
 
      const handleData = () => {
-          
+          swal({
+               icon: "warning",
+               title: "Register First!"
+          })
      }
 
      return (
