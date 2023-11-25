@@ -12,7 +12,8 @@ function Navbar(){
      const handleData = () => {
           swal({
                icon: "warning",
-               title: "Register First!"
+               title: "Register First!",
+               text: "Please Register First"
           })
      }
 
@@ -27,12 +28,12 @@ function Navbar(){
                          </Fragment>
                     ))}
                </ul>
-               <button
+               <Link href="/Login"><button
                className="btn" 
                name="button" 
                type="button"
                onClick={handleData} 
-               >Sign up</button>
+               >Sign up</button></Link>
           </nav>
         </header>
      )
