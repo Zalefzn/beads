@@ -14,7 +14,7 @@ function Navbar(){
                icon: "warning",
                title: "Register First!",
                text: "Please Register First"
-          })
+          });
      }
 
      return (
@@ -28,12 +28,12 @@ function Navbar(){
                          </Fragment>
                     ))}
                </ul>
-               <Link href="/Login"><button
+               <button
                className="btn" 
                name="button" 
                type="button"
                onClick={handleData} 
-               >Sign up</button></Link>
+               ><Link href="/Login">Sign up</Link></button>
           </nav>
         </header>
      )
