@@ -1,0 +1,51 @@
+.contact{
+     height: 80vh;
+     width: auto;
+
+     .contact-content{
+          justify-content: center;
+          margin: 20vh 15vw;
+          position: static;
+          height: 50vh;
+          width: 70vw;
+          background-color: rgb(255, 255, 255);
+          box-shadow: 10px 10px 5px rgb(211, 211, 211);
+
+
+          .card-two-contact{
+               margin-top: 50px;
+               height: 50vh;
+               width: 70vw;
+               background-color: rgb(255, 255, 255);
+
+               .contact-h2{
+                    word-wrap: break-word;
+                    text-align: center;
+                    color: rgb(0, 0, 0);
+                    font-size: 25px;
+                    font-weight: bold;
+               }
+
+               .contact-p{
+                    margin-top: 20px;
+                    text-align: center;
+                    font-size: 20px;
+               }
+
+               .btn-contact{
+                    margin-top: 30px;
+                    text-align: center;
+                    margin-left: 45%;
+                    height: 5vh;
+                    width: 9vw;
+                    background-color: rgb(196, 218, 0);
+                    box-shadow: rgba(80, 80, 80, 0.04) 0 0 1px 0, rgba(155, 155, 155, 0.1) 0 3px 4px 0;
+                    color: white;
+                    font-size: 15px;
+                    font-weight: 600;
+                    border-radius: 50px;
+                    
+               }
+          }
+     }
+}
