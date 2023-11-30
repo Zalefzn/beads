@@ -1,13 +1,15 @@
 'use client';
 
 import Image from 'next/image';
-
+import './login.scss';
 
 
 const LoginPage = () => {
      return (
           <main className="main-login" id="Login">
-               <h1> Test Login</h1>
+               <section className="card-login">
+                    <h1>Login Page</h1>
+               </section>
           </main>
      );
 }
