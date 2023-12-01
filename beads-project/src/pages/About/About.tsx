@@ -7,7 +7,7 @@ export default function About() {
     <main className="about" id="about">
           <section className="section-about">
                <section className="section-img">
-                    <Image alt="" src="/about.png" width={130} height={130} className="img-about"></Image>
+                    <Image alt="about" src="/about.png" width={130} height={130} className="img-about"></Image>
                </section>
                <section className="content-about">
                 <h2 className="h3-about">Who we are</h2>

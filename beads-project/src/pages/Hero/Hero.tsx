@@ -16,7 +16,7 @@ export default function Hero() {
       <main className="hero" id="hero">
         <section className="section-hero">  
           <section className="img-hero">
-            <Image src="/hero.png" alt="" width={130} height={130} className="img-data"/>
+            <Image src="/hero.png" alt="hero" width={130} height={130} className="img-data"/>
           </section>
           <section className="hero-content">
             <h2 className="judul-hero">

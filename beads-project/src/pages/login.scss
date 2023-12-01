@@ -1,13 +1,20 @@
 .main-login{
     
+     .img-login{
+          float: right;
+          margin: 50px 50px;
+          height: 80vh;
+          width: auto;
+     }
 
      .card-login{
-          margin:20vh 13vw;
-          height: 70vh;
+          position: absolute;
+          margin:10vh 13vw;
+          height: 80vh;
           width: 30vw;
-          background-color: rgb(224, 145, 145);
+          background-color: rgb(87, 86, 86);
           border-radius: 30px;
-          box-shadow: 10px 10px 5px rgb(211, 211, 211);
+          box-shadow: 5px 5px 5px rgb(211, 211, 211);
      }
     
 }
