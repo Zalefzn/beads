@@ -8,7 +8,7 @@ import Contact from "@/pages/Contact/Contact";
 export default function Home() {
   return (
     <>
-      <main className={Style.main}>
+      <main className={Style.main} id="/Home">
         <Navbar />
         <Hero />
         <About />

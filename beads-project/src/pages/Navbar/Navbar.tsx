@@ -1,20 +1,26 @@
 'use client';
 
 import './navbar.scss';
-import  listData  from '../../elemnts/Data';
+import  listData from "../../elemnts/Data";
 import { Fragment, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import swal from 'sweetalert';
+import { useRouter } from 'next/navigation';
 
-function Navbar(){
+function Navbar() {
 
-     const handleData = () => {
+     const router = useRouter();
+
+     function handleData  () {
           swal({
-               icon: "warning",
+               icon: "warning",    
                title: "Register First!",
                text: "Please Register First"
           });
+          router.push('/Login');
+         
+          
      }
 
      return (
@@ -33,7 +39,7 @@ function Navbar(){
                name="button" 
                type="button"
                onClick={handleData} 
-               ><Link href="/Login">Sign up</Link></button>
+               >Sign up</button>
           </nav>
         </header>
      )
