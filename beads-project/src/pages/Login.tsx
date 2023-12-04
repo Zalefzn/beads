@@ -5,6 +5,7 @@ import './login.scss';
 import { useState } from 'react';
 import swal from 'sweetalert';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 
 const LoginPage = () => {
@@ -56,6 +57,7 @@ const LoginPage = () => {
                               </section>
                          </form>
                     </div>
+                    <p className="can-account">dont have an account ? <Link href="/Register"><span className="span-account">Register</span></Link></p>
                </section>
           </main>
      );

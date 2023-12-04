@@ -1,5 +1,5 @@
 
-const listData = [
+export const listData = [
      {
 
           id: 1,
@@ -23,5 +23,5 @@ const listData = [
      }
 ]
 
-export default listData;
+
 

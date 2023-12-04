@@ -1,3 +1,94 @@
 .register-page{
-     
+     position: relative;
+     font-family: Arial, Helvetica, sans-serif;
+
+     .card-register{
+          float: right;
+          margin:-80vh 13vw;
+          height: 80vh;
+          width: 30vw;
+          background-color: rgb(255, 255, 255);
+          border-radius: 30px;
+          box-shadow: 5px 5px 5px rgb(211, 211, 211);
+
+          .can-account-regis{
+               padding: 1px 122px;
+          }
+
+          .span-account-regis{
+               color: blue;
+               font-weight: bold;
+          }
+
+          a{
+               text-decoration: none;
+          }
+
+          .header-register{
+               padding: 10px 30px;
+               color: rgb(0, 0, 0);
+               font-size: 25px;
+               font-weight: bold;
+          }
+
+          .form-input{
+               padding: 30px 30px;
+
+               .input-username{
+                    padding: 10px;
+                    height: 3vh;
+                    width: 23vw;
+                    border-radius: 30px;
+                    border-width: 1px;
+               }
+
+               .input-email{
+                    padding: 10px;
+                    height: 3vh;
+                    width: 23vw;
+                    border-radius: 30px;
+                    border-width: 1px;
+               }
+
+               .input-password{
+                    padding: 10px;
+                    height: 3vh;
+                    width: 23vw;
+                    border-radius: 30px;
+                    border-width: 1px;
+               }
+
+               .input-confPass{
+                    padding: 10px;
+                    height: 3vh;
+                    width: 23vw;
+                    border-radius: 30px;
+                    border-width: 1px;
+               }
+
+
+               .btn-regis{
+                    margin-top: 5vh;
+                    
+                    .btn-submitRegis{
+                         cursor:pointer;
+                         border-width: 0;
+                         color: white;
+                         font-size: 20px;
+                         font-weight: bold;
+                         background-color: rgb(182, 182, 21);
+                         padding: 10px;
+                         width: 24vw;
+                         border-radius: 30px;
+                    }
+               }
+          }
+     }
+
+     .img-regis{
+          float: left;
+          margin: 5px 50px;
+          height: 90vh;
+          width: auto;
+     }
 }
