@@ -1,7 +1,9 @@
 'use client';
 
+import { useGlobalContext } from '@/api/Context/auth';
 import Image from 'next/image';
 import './login.scss';
+import { useEffect } from 'react';
 import { useState } from 'react';
 import swal from 'sweetalert';
 import { useRouter } from 'next/navigation';
@@ -10,10 +12,25 @@ import Link from 'next/link';
 
 const LoginPage = () => {
 
+
+     const {userId, setUserId, data, setData} = useGlobalContext();
+
      const [email, setEmail] = useState("");
      const [pass, setPass] = useState("");
      const [open, setOpen] = useState(false);
      const router = useRouter();
+
+
+     useEffect(()=> {
+
+          setUserId('2')
+          setData([
+               {firstName: 'Rizal'},
+               {firstName: 'Fauzan'},
+               {firstName: 'Bisma'},
+
+          ])
+     })
 
      const handleLogin = () => {
           if(!email && !pass){
@@ -27,7 +44,7 @@ const LoginPage = () => {
                     icon: "success",
                     title: "Login Success!"
                })
-               router.push('/Register');
+               router.push('/MainMenu');
           }
      }
 
@@ -63,4 +80,4 @@ const LoginPage = () => {
      );
 }
 
-export default LoginPage;4  
+export default LoginPage;

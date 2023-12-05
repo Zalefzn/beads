@@ -13,10 +13,8 @@ var Register = function () {
     var _b = react_1.useState(""), pass = _b[0], setPass = _b[1];
     var _c = react_1.useState(""), username = _c[0], setUsername = _c[1];
     var _d = react_1.useState(""), confPass = _d[0], setConfPass = _d[1];
-    var saveSession = [];
-    var saveString = "SAVE-DATA-SESSION";
     var handleRegister = function () {
-        if (!email && !pass) {
+        if (!email && !pass && !confPass) {
             sweetalert_1["default"]({
                 icon: "warning",
                 title: "Please Fill Your Data First!"
@@ -30,27 +28,6 @@ var Register = function () {
             router.push('/Login');
         }
     };
-    react_1.useEffect(function () {
-        if (pass === confPass) {
-            saveSession.push.apply(saveSession, [pass, confPass]);
-            document.dispatchEvent(new Event(saveString));
-            document.addEventListener('DOMContentLoaded', function () {
-                var register = document.querySelector('.btn-submitRegis');
-                register === null || register === void 0 ? void 0 : register.addEventListener('submit', function (event) {
-                    event.preventDefault();
-                    router.push('/Login');
-                });
-            });
-        }
-        else {
-            if (!pass && !confPass) {
-                sweetalert_1["default"]({
-                    icon: "warning",
-                    title: "Password Wrong!"
-                });
-            }
-        }
-    });
     return (React.createElement("main", { className: "register-page", id: "Register" },
         React.createElement(image_1["default"], { src: "/hero.png", alt: "hero-register", width: 500, height: 500, className: "img-regis" }),
         React.createElement("section", { className: "card-register" },

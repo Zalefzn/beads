@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '../styles/globals.css';
 import Head from 'next/head';
+import { GlobalContextProvider } from '@/api/Context/auth';
+import { useContext } from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,7 +30,14 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
      
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <GlobalContextProvider>
+          {children}
+        </GlobalContextProvider>
+      </body>
     </html>
   )
 }
+
+
+

@@ -16,12 +16,8 @@ const Register = () => {
       const [username, setUsername] = useState("");
       const [confPass, setConfPass] = useState("");
 
-
-      const saveSession = [];
-      const saveString = "SAVE-DATA-SESSION";
-
       const handleRegister = () => {
-            if(!email && !pass) {
+            if(!email && !pass && !confPass) {
                 swal({
                     icon: "warning",
                     title: "Please Fill Your Data First!"
@@ -34,27 +30,6 @@ const Register = () => {
                 router.push('/Login');
             }
       }
-
-      useEffect(() => {
-        if(pass === confPass){
-            saveSession.push(...[pass, confPass]);
-            document.dispatchEvent(new Event(saveString));
-            document.addEventListener('DOMContentLoaded', function() {
-                const register = document.querySelector('.btn-submitRegis');
-                register?.addEventListener('submit', (event) => {
-                    event.preventDefault();
-                    router.push('/Login');
-                })
-            })
-        } else {
-            if(!pass && !confPass){
-                swal({
-                    icon: "warning",
-                    title: "Password Wrong!"
-                });
-            }
-        }
-      })
 
       return(
           <main className="register-page" id="Register">
