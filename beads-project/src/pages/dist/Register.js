@@ -58,7 +58,7 @@ var Register = function () {
                         }, placeholder: '*******' }),
                     React.createElement("br", null),
                     React.createElement("br", null),
-                    React.createElement("label", { className: "label-confPass" }, "Password"),
+                    React.createElement("label", { className: "label-confPass" }, "Confirm Password"),
                     React.createElement("br", null),
                     React.createElement("input", { type: "password", className: "input-confPass", value: confPass, onChange: function (e) {
                             setConfPass(e.target.value);

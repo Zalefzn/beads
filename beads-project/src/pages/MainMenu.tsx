@@ -3,35 +3,30 @@
 import Image from 'next/image';
 import {useRouter} from 'next/navigation';
 import './mainMenu.scss';
-import { useGlobalContext } from '@/api/Context/auth';
+import Link from 'next/link';
 import { useEffect } from 'react';
+import { Metadata } from 'next';
 
 
 
 const MainDash = () => {
      const router = useRouter();
-     const {userId, setUserId, data, setData} = useGlobalContext();
 
-
-     useEffect(()=> {
-          setUserId('2');
-          setData([
-               {firstName: 'Rizal'},
-               {firstName: 'Fauzan'},
-               {firstName: 'Bisma'},
-
-          ]);
-     })
-
+     const handleSignout = () => {
+          router.push('/Login');
+     }
+     
      return(
-          <main className="main-dashboard" id="MainMenu">
-               <h1>Dashboard Page</h1>
-               <h2> Server user : {userId}</h2>
-               {data.map((e, i) => 
-               <p key={i}>
-                    {e.firstName}
-               </p>)}
-          </main>
+          <>   
+               <header className="header-dashboard">
+                    <nav className="nav-dashboard">
+                         <li className="signout"><button type="submit" onClick={handleSignout}>Sign out</button></li>
+                    </nav>
+               </header>
+               <main className="main-dashboard" id="MainMenu">
+               
+               </main>
+          </>
      );
 }
 

@@ -3,7 +3,6 @@ exports.__esModule = true;
 exports.metadata = void 0;
 var google_1 = require("next/font/google");
 require("../styles/globals.css");
-var auth_1 = require("@/api/Context/auth");
 var inter = google_1.Inter({ subsets: ['latin'] });
 exports.metadata = {
     title: 'Create Next App',
@@ -20,7 +19,6 @@ function RootLayout(_a) {
             React.createElement("meta", { name: "keywords", content: "Beads Product" }),
             React.createElement("meta", { name: "author", content: "Beads Me" }),
             React.createElement("meta", { name: "viewport", content: "width=device-width, initial-scale=1.0" })),
-        React.createElement("body", { className: inter.className },
-            React.createElement(auth_1.GlobalContextProvider, null, children))));
+        React.createElement("body", { className: inter.className }, children)));
 }
 exports["default"] = RootLayout;

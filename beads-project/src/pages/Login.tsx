@@ -1,6 +1,6 @@
 'use client';
 
-import { useGlobalContext } from '@/api/Context/auth';
+
 import Image from 'next/image';
 import './login.scss';
 import { useEffect } from 'react';
@@ -8,29 +8,21 @@ import { useState } from 'react';
 import swal from 'sweetalert';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import { Metadata } from 'next';
 
+
+export const metadata: Metadata = {
+     title: "Login Page",
+     description: "Login Page Auth",
+     icons: "/logo.png",
+}
 
 const LoginPage = () => {
-
-
-     const {userId, setUserId, data, setData} = useGlobalContext();
-
+     
      const [email, setEmail] = useState("");
      const [pass, setPass] = useState("");
      const [open, setOpen] = useState(false);
      const router = useRouter();
-
-
-     useEffect(()=> {
-
-          setUserId('2')
-          setData([
-               {firstName: 'Rizal'},
-               {firstName: 'Fauzan'},
-               {firstName: 'Bisma'},
-
-          ])
-     })
 
      const handleLogin = () => {
           if(!email && !pass){
@@ -50,7 +42,8 @@ const LoginPage = () => {
 
 
      return (
-          <main className="main-login" id="Login">
+          <>
+               <main className="main-login" id="Login">
                <Image className="img-login" src="/hero.png" alt="Login-Page" width={500} height={500} />
                <section className="card-login">
                     <h1 className="header-login">Login<br />Your Account</h1>
@@ -77,6 +70,8 @@ const LoginPage = () => {
                     <p className="can-account">dont have an account ? <Link href="/Register"><span className="span-account">Register</span></Link></p>
                </section>
           </main>
+          
+          </>
      );
 }
 

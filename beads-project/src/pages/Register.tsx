@@ -61,7 +61,7 @@ const Register = () => {
                               }} placeholder='*******'></input>
                               <br />
                               <br />
-                              <label className="label-confPass">Password</label>
+                              <label className="label-confPass">Confirm Password</label>
                               <br />
                               <input type="password" className="input-confPass" value={confPass} onChange={(e) => {
                                    setConfPass(e.target.value);
