@@ -1,0 +1,73 @@
+.main-login {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-login .img-login {
+  float: right;
+  margin: 5px 50px;
+  height: 90vh;
+  width: auto;
+}
+.main-login .card-login {
+  margin: 10vh 13vw;
+  height: 80vh;
+  width: 30vw;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px lightgray;
+}
+.main-login .card-login .can-account {
+  padding: 5px 95px;
+}
+.main-login .card-login .span-account {
+  color: blue;
+  font-weight: bold;
+}
+.main-login .card-login a {
+  text-decoration: none;
+}
+.main-login .card-login .header-login {
+  padding: 70px 30px;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+.main-login .card-login .form-input {
+  padding: 10px 30px;
+}
+.main-login .card-login .form-input .error-email {
+  font-size: 10px;
+  color: red;
+}
+.main-login .card-login .form-input .error-pass {
+  font-size: 10px;
+  color: red;
+}
+.main-login .card-login .form-input .input-email {
+  padding: 10px;
+  height: 3vh;
+  width: 23vw;
+  border-radius: 30px;
+  border-width: 1px;
+}
+.main-login .card-login .form-input .input-password {
+  padding: 10px;
+  height: 3vh;
+  width: 23vw;
+  border-radius: 30px;
+  border-width: 1px;
+}
+.main-login .card-login .form-input .btn-login {
+  margin-top: 7vh;
+}
+.main-login .card-login .form-input .btn-login .btn-submit {
+  cursor: pointer;
+  border-width: 0;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #b6b615;
+  padding: 10px;
+  width: 24vw;
+  border-radius: 30px;
+}

@@ -38,7 +38,18 @@
           }
 
           .form-input{
-               padding: 30px 30px;
+               padding: 10px 30px;
+
+
+               .error-email{
+                    font-size: 10px;
+                    color: red;
+               }
+
+               .error-pass{
+                    font-size: 10px;
+                    color: red;
+               }
 
                .input-email{
                     padding: 10px;

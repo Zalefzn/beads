@@ -28,7 +28,23 @@
   font-weight: bold;
 }
 .register-page .card-register .form-input {
-  padding: 30px 30px;
+  padding: 10px 30px;
+}
+.register-page .card-register .form-input .username-err {
+  color: red;
+  font-size: 10px;
+}
+.register-page .card-register .form-input .email-err {
+  color: red;
+  font-size: 10px;
+}
+.register-page .card-register .form-input .pass-err {
+  color: red;
+  font-size: 10px;
+}
+.register-page .card-register .form-input .confPass-err {
+  color: red;
+  font-size: 10px;
 }
 .register-page .card-register .form-input .input-username {
   padding: 10px;

@@ -37,7 +37,7 @@ function Navbar() {
                <button
                className="btn" 
                name="button" 
-               type="button"
+               type="submit"
                onClick={handleData} 
                >Sign up</button>
           </nav>

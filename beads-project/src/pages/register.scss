@@ -32,7 +32,27 @@
           }
 
           .form-input{
-               padding: 30px 30px;
+               padding: 10px 30px;
+
+               .username-err{
+                    color: red;
+                    font-size: 10px;
+               }
+
+               .email-err{
+                    color: red;
+                    font-size: 10px;
+               }
+
+               .pass-err{
+                    color: red;
+                    font-size: 10px;
+               }
+
+               .confPass-err{
+                    color: red;
+                    font-size: 10px;
+               }
 
                .input-username{
                     padding: 10px;
