@@ -7,16 +7,11 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useEffect } from 'react';
 import { Metadata } from 'next';
+import HeaderDash from './Dashboard/Header';
 
 
 
 const MainDash = () => {
-     const router = useRouter();
-
-     const handleSignout = () => {
-          router.push('/Login');
-     }
-     
      return(
           <>   
                <Head>
@@ -28,14 +23,7 @@ const MainDash = () => {
                     <meta name="author" content="Beads Me" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
                </Head>
-               <header className="header-dashboard">
-                    <nav className="nav-dashboard">
-                         <li className="signout"><button type="submit" onClick={handleSignout}>Sign out</button></li>
-                    </nav>
-               </header>
-               <main className="main-dashboard" id="MainMenu">
-               
-               </main>
+               <HeaderDash />
           </>
      );
 }

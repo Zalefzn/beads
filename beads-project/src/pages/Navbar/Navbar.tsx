@@ -13,14 +13,12 @@ function Navbar() {
      const router = useRouter();
 
      function handleData  () {
-          // swal({
-          //      icon: "warning",    
-          //      title: "Register First!",
-          //      text: "Please Register First"
-          // });
+          swal({
+               icon: "warning",    
+               title: "Register First!",     
+               text: "Please Register First"
+          });
           router.push('/Login');
-         
-          
      }
 
      return (
@@ -38,8 +36,8 @@ function Navbar() {
                className="btn" 
                name="button" 
                type="submit"
-               onClick={handleData} 
-               >Sign up</button>
+               // onClick={handleData} 
+               ><Link href="/Login">Sign up</Link></button>
           </nav>
         </header>
      )
