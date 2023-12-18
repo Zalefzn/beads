@@ -1,0 +1,26 @@
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  width: 0;
+}
+.sidebar-content .section-sidebar .ul-sidebar .li-sidebar {
+  list-style: none;
+  margin: 6vh 6vw;
+}
+.sidebar-content .section-sidebar .ul-sidebar .li-sidebar .btn-sidebar {
+  padding: 10px;
+  width: 10vw;
+  background-color: white;
+  border-radius: 30px;
+  border-width: 1px;
+}
+.sidebar-content .section-sidebar .ul-sidebar .li-sidebar .btn-sidebar:hover {
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+  width: 10vw;
+  background-color: #c69503;
+  border-radius: 30px;
+  border-style: none;
+  box-shadow: 5px 5px 5px lightgray;
+}

@@ -1,6 +1,7 @@
 'use client';
 
-
+import './sidebar.scss';
+import {useRouter} from 'next/navigation';
 
 const listItems = [
      {
@@ -24,7 +25,7 @@ const SideBar = () => {
                <section className="section-sidebar">
                     <ul className="ul-sidebar">
                          {listItems.map((items) => 
-                              <li className="li-sidebar">{items.route}</li>
+                              <li className="li-sidebar"><button type="button" name="button" className="btn-sidebar">{items.route}</button></li>
                          )}
                     </ul>
                </section>
