@@ -11,7 +11,8 @@ const HeaderDash = () => {
 
      const router = useRouter();
 
-     const handleSignout = () => {
+     const handleSignout = async() => {
+          
           router.push('/Login');
      }
 

@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { useEffect } from 'react';
 import { Metadata } from 'next';
 import HeaderDash from './Dashboard/Header';
+import SideBar from './Dashboard/SideBar';
 
 
 
@@ -24,6 +25,7 @@ const MainDash = () => {
                     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
                </Head>
                <HeaderDash />
+               <SideBar />
           </>
      );
 }
