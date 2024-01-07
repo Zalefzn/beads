@@ -8,11 +8,9 @@ import { useRouter } from 'next/navigation';
 
 const HeaderDash = () => {
 
-
      const router = useRouter();
-
+     
      const handleSignout = async() => {
-          
           router.push('/Login');
      }
 

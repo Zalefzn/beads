@@ -4,15 +4,22 @@ import Image from 'next/image';
 import {useRouter} from 'next/navigation';
 import './mainMenu.scss';
 import Head from 'next/head';
+import { useState } from 'react';
 import Link from 'next/link';
 import { useEffect } from 'react';
 import { Metadata } from 'next';
 import HeaderDash from './Dashboard/Header';
 import SideBar from './Dashboard/SideBar';
+import Content from './Dashboard/Content';
 
 
+const MainDash = () => { 
+     const [currentPage, setCurrentPage] = useState<string>('product');
 
-const MainDash = () => {
+     const handleItemClick = (page: string) => {
+          setCurrentPage(page);
+     };
+
      return(
           <>   
                <Head>
@@ -25,7 +32,8 @@ const MainDash = () => {
                     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
                </Head>
                <HeaderDash />
-               <SideBar />
+               <SideBar onItemClick={handleItemClick} />
+               <Content page={currentPage} />
           </>
      );
 }

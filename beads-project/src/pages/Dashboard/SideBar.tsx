@@ -6,26 +6,30 @@ import {useRouter} from 'next/navigation';
 const listItems = [
      {
           route: "Product",
-          url: ""
+          url: "product"
      },
      {
           route: "Transaction",
-          url: ""
-     },
+          url: "transaction"
+     },   
      {
           route: "Wishlist",
-          url: "",
+          url: "wishlist",
      }
 ]
 
-const SideBar = () => {
 
+interface SidebarProps {
+     onItemClick: (page: string) => void;
+}
+
+const SideBar: React.FC<SidebarProps> = ({ onItemClick }) => {
      return(
           <main className="sidebar-content">
                <section className="section-sidebar">
                     <ul className="ul-sidebar">
                          {listItems.map((items) => 
-                              <li className="li-sidebar"><button type="button" name="button" className="btn-sidebar">{items.route}</button></li>
+                              <li className="li-sidebar"><button type="button" name="button" className="btn-sidebar" onClick={() => onItemClick(items.url)}>{items.route}</button></li>
                          )}
                     </ul>
                </section>
